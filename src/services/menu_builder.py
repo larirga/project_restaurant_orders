@@ -38,5 +38,4 @@ class MenuBuilder:
                         'restrictions': dish.get_restrictions(),
                     }
                 )
-
         return menu
