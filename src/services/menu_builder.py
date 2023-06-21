@@ -27,7 +27,7 @@ class MenuBuilder:
     # Req 4
     def get_main_menu(self, restriction=None) -> List[Dict]:
         menu = []
-        for dish in self.menu_data.dishes:
+        for dish in list(self.menu_data.dishes):
             if restriction is None or restriction not in list(
                     dish.get_restrictions()):
                 menu.append(
